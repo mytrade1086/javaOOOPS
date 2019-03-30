@@ -13,14 +13,12 @@ public class HashMapDemo {
 		hm.put(3, "shweta");
 
 		System.out.println(hm);// {1=sumit, 2=sagar, 3=shweta}
-		
-		System.out.println((hm.get(1)));//sumit
-		
-		System.out.println((hm.get(100)));//null if searching non existent key
-		
-		
-		
 
+		System.out.println((hm.get(1)));// sumit
+
+		System.out.println((hm.get(100)));// null if searching non existent key
+
+		// Iterating key value with entry set
 		for (Entry m : hm.entrySet()) {
 
 			System.out.println(m.getKey() + " " + m.getValue());
@@ -29,5 +27,8 @@ public class HashMapDemo {
 //    	3 shweta
 
 		}
+		
+	
+		
 	}
 }
