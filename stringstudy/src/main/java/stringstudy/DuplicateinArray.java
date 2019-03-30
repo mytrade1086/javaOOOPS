@@ -1,6 +1,9 @@
 package stringstudy;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 public class DuplicateinArray {
@@ -34,6 +37,41 @@ public class DuplicateinArray {
 
 			}
 		}
+
+		// 3.Using HashMap
+
+		Map<String, Integer> progmap = new HashMap<String, Integer>();
+
+		for (String prog : lang) {
+			Integer count = progmap.get(prog);
+
+			if (count == null) {
+
+				progmap.put(prog, 1);
+			}
+
+			else {
+				progmap.put(prog, ++count);
+			}
+
+		}
+		
+		System.out.println(progmap); //{csharp=1, java=2, c=2, .net=1}
+		
+		Set<Entry<String, Integer>> eset=progmap.entrySet();
+
+for(Entry<String, Integer> s:eset) {
+	
+	if( s.getValue()>1){
+		
+		System.out.println(s.getKey()); 
+	}
+}
+		
+		
+		
+		
+		
 
 	}
 
