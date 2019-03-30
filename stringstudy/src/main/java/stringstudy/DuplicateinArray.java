@@ -55,23 +55,20 @@ public class DuplicateinArray {
 			}
 
 		}
-		
-		System.out.println(progmap); //{csharp=1, java=2, c=2, .net=1}
-		
-		Set<Entry<String, Integer>> eset=progmap.entrySet();
 
-for(Entry<String, Integer> s:eset) {
-	
-	if( s.getValue()>1){
-		
-		System.out.println(s.getKey()); 
-	}
-}
-		
-		
-		
-		
-		
+		System.out.println(progmap); // {csharp=1, java=2, c=2, .net=1}
+
+		Set<Entry<String, Integer>> eset = progmap.entrySet();
+
+		for (Entry<String, Integer> s : eset) {
+
+			if (s.getValue() > 1) {
+
+				System.out.println(s.getKey());
+				// java
+				// c
+			}
+		}
 
 	}
 
