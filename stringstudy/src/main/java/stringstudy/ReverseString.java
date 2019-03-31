@@ -1,7 +1,5 @@
 package stringstudy;
 
-import java.nio.ShortBuffer;
-
 public class ReverseString {
 
 	public static void main(String[] args) {
