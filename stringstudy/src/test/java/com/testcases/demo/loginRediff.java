@@ -24,7 +24,7 @@ public class loginRediff {
 		driver = new ChromeDriver();
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		// System.out.println("print");
-		System.out.println(mapdata.get("username"));
+		//System.out.println(mapdata.get("username"));
 
 		driver.findElement(By.xpath("//input[@name='login']")).sendKeys(mapdata.get("username").toString());
 		driver.findElement(By.xpath("//input[@name='passwd']")).sendKeys(mapdata.get("password").toString());
