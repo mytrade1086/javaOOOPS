@@ -19,7 +19,7 @@ public class HashMapDemo {
 		System.out.println((hm.get(100)));// null if searching non existent key
 
 		// Iterating key value with entry set
-		for (Entry m : hm.entrySet()) {
+		for (Entry<Integer, String> m : hm.entrySet()) {
 
 			System.out.println(m.getKey() + " " + m.getValue());
 //    	1 sumit
