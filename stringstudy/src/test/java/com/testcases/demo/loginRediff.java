@@ -6,34 +6,43 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+
 public class loginRediff {
 
 	@Test(dataProvider = "getdata")
-	public void login_Rediff(Map<Object, Object> mapdata) {
+	public void login_Rediff(Map<Object, Object> mapdata) throws IOException {
 
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "H:\\chromedriver (2).exe");
 		driver = new ChromeDriver();
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		// System.out.println("print");
-		//System.out.println(mapdata.get("username"));
+		System.out.println(mapdata.get("dummy"));
 
 		driver.findElement(By.xpath("//input[@name='login']")).sendKeys(mapdata.get("username").toString());
 		driver.findElement(By.xpath("//input[@name='passwd']")).sendKeys(mapdata.get("password").toString());
-		driver.findElement(By.xpath("//input[@title='Sign in']")).click();
 		
-		 driver.quit();
+		File Scr=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+	   FileUtils. copyFile(Scr, new File("C:/selenium/"+System. currentTimeMillis()+".png")); 
+		
+		driver.findElement(By.xpath("//input[@title='Sign in']")).click();
+		driver.quit();
 	}
 
-	@DataProvider(name = "getdata")
+	@DataProvider(name ="getdata")
 	public Object[][] dataproviderMethod() {
 
 		FileInputStream fis = null;

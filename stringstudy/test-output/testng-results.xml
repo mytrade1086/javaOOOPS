@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40276" started-at="2019-03-31T10:29:56Z" finished-at="2019-03-31T10:30:37Z">
+  <suite name="Default suite" duration-ms="37027" started-at="2019-04-01T15:08:46Z" finished-at="2019-04-01T15:09:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40276" started-at="2019-03-31T10:29:56Z" finished-at="2019-03-31T10:30:37Z">
+    <test name="Default test" duration-ms="37027" started-at="2019-04-01T15:08:46Z" finished-at="2019-04-01T15:09:23Z">
       <class name="com.testcases.demo.loginRediff">
-        <test-method status="PASS" signature="login_Rediff(java.util.Map)[pri:0, instance:com.testcases.demo.loginRediff@59fa1d9b]" name="login_Rediff" duration-ms="15580" started-at="2019-03-31T10:29:57Z" data-provider="getdata" finished-at="2019-03-31T10:30:13Z">
+        <test-method status="PASS" signature="login_Rediff(java.util.Map)[pri:0, instance:com.testcases.demo.loginRediff@5b275dab]" name="login_Rediff" duration-ms="15465" started-at="2019-04-01T15:08:48Z" data-provider="getdata" finished-at="2019-04-01T15:09:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=wer1, username=sumit}]]>
+                <![CDATA[{dummy=3.0, password=123.0, username=sumit}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_Rediff -->
-        <test-method status="PASS" signature="login_Rediff(java.util.Map)[pri:0, instance:com.testcases.demo.loginRediff@59fa1d9b]" name="login_Rediff" duration-ms="10620" started-at="2019-03-31T10:30:13Z" data-provider="getdata" finished-at="2019-03-31T10:30:24Z">
+        <test-method status="PASS" signature="login_Rediff(java.util.Map)[pri:0, instance:com.testcases.demo.loginRediff@5b275dab]" name="login_Rediff" duration-ms="8623" started-at="2019-04-01T15:09:03Z" data-provider="getdata" finished-at="2019-04-01T15:09:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=wer2, username=neha}]]>
+                <![CDATA[{dummy=#s, password=wer2, username=neha}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_Rediff -->
-        <test-method status="PASS" signature="login_Rediff(java.util.Map)[pri:0, instance:com.testcases.demo.loginRediff@59fa1d9b]" name="login_Rediff" duration-ms="13088" started-at="2019-03-31T10:30:24Z" data-provider="getdata" finished-at="2019-03-31T10:30:37Z">
+        <test-method status="PASS" signature="login_Rediff(java.util.Map)[pri:0, instance:com.testcases.demo.loginRediff@5b275dab]" name="login_Rediff" duration-ms="10901" started-at="2019-04-01T15:09:12Z" data-provider="getdata" finished-at="2019-04-01T15:09:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=wer3, username=amit}]]>
+                <![CDATA[{dummy=21/12/2018, password=wer3, username=amit}]]>
               </value>
             </param>
           </params>

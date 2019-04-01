@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [assertion Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.testcases.demo.ListeneTest"/>
+  </listeners>
+  <test thread-count="5" name="AssetionDemo(failed)" parallel="tests">
     <classes>
-      <class name="com.testcases.demo.loginRediff">
+      <class name="com.testcases.demo.SoftAssertDemo">
         <methods>
-          <include name="login_Rediff" invocation-numbers="0 1 2"/>
+          <include name="demoSoftAssert_withAssertAll"/>
         </methods>
-      </class> <!-- com.testcases.demo.loginRediff -->
+      </class> <!-- com.testcases.demo.SoftAssertDemo -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- AssetionDemo(failed) -->
+</suite> <!-- Failed suite [assertion Suite] -->
