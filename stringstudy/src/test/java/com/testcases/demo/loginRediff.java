@@ -18,7 +18,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-
 public class loginRediff {
 
 	@Test(dataProvider = "getdata")
@@ -33,16 +32,15 @@ public class loginRediff {
 
 		driver.findElement(By.xpath("//input[@name='login']")).sendKeys(mapdata.get("username").toString());
 		driver.findElement(By.xpath("//input[@name='passwd']")).sendKeys(mapdata.get("password").toString());
-		
-		File Scr=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		
-	   FileUtils. copyFile(Scr, new File("C:/selenium/"+System. currentTimeMillis()+".png")); 
-		
+
+		File Scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(Scr, new File("C:/selenium/" + System.currentTimeMillis() + ".png"));
+
 		driver.findElement(By.xpath("//input[@title='Sign in']")).click();
 		driver.quit();
 	}
 
-	@DataProvider(name ="getdata")
+	@DataProvider(name = "getdata")
 	public Object[][] dataproviderMethod() {
 
 		FileInputStream fis = null;
