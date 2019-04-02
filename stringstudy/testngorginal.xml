@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="assertion Suite" parallel="tests">
+<listeners>
+
+<listener class-name="com.testcases.demo.ListeneTest" />
+</listeners>
+  <test thread-count="5" name="AssetionDemo">
+    <classes>
+      <class name="com.testcases.demo.SoftAssertDemo"/>
+      <class name="com.testcases.demo.dummy"/>
+    </classes>
+  </test> <!-- AssetionDemo -->
+</suite> <!-- assertion Suite -->
