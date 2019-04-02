@@ -15,6 +15,8 @@ public class Palindrome {
             reversedInteger = reversedInteger * 10 + remainder;
             num  /= 10;
         }
+        
+   
 
         // palindrome if orignalInteger and reversedInteger are equal
         if (originalInteger == reversedInteger)
