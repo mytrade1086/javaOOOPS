@@ -21,6 +21,25 @@ public class Fibonacci {
 	            t1 = t2;
 	            t2 = sum;
 	        }
+	        
+	        
+	        
+	        
+	    
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
 	    }
 
 }
